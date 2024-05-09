@@ -10,6 +10,17 @@
     @livewireStyles
 </head>
 <body>
+    <div class="">
+        @livewire('header')
+    </div>
+
+    <div class="">
+        @livewire('sidebar')
+    </div>
+      
+    <main>
+        {{ $slot }}
+    </main>
     
     @livewireScripts
 </body>
